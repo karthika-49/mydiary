@@ -1,0 +1,155 @@
+:root{
+    --dark : rgb(97,111,161);
+    --darker:#29275c;
+    --darkest :rgb(30,28,64);
+    --gray : #6B7280;
+    --light : #EEE;
+   
+  }
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      font-family: cursive;
+  
+  }
+  body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: var(--dark);
+      color: #FFF;
+  
+  }
+  .container{
+    display: flex;
+  }
+  header{
+      padding: 2rem 1rem;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+  }
+  header h1{
+      font-size: 2.5rem;
+      font-weight: 100;
+      color : white;
+      margin-top: -2rem;
+      margin-bottom: 1rem;
+  }
+  #new-prblm-form{
+      display: flex;
+  
+  }
+  input , button{
+      appearance: none;
+      border: none;
+      outline: none;
+      background: none;
+  }
+  #new-prblm-input{
+      flex :1 1 0%;
+      background-color: var(--darker);
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-right: 1rem;
+      color : var(--light);
+      font-size: 1.25rem;
+  }
+  #new-prblm-input::placeholder{
+      color: rgb(91, 91, 91);
+  }
+  #new-prblm-submit{
+    margin-top: 60px;
+    height: 50px;
+    width: 50px;
+      color:crimson;
+      font-size: 35px;
+      font-weight: 1000;
+      background-color:#1e1c40;
+      border-radius: 10rem;
+      cursor: pointer;
+      transition: 0.4s;
+  }
+  #new-prblm-submit:hover{
+  color: white;
+  }
+  #new-prblm-submit:active{
+      opacity: 0.6;
+  }
+  main{
+      flex:1 1 0%;
+      max-width: 800px;
+      width:200%;
+      margin: 0 auto;
+  }
+  .prblm-list{
+      padding: 1rem;
+  }
+  .prblm-list h2{
+  font-size: 1.5rem;
+  font-weight: 100;
+  color:white;
+  margin-bottom: 1rem;
+  }
+  #prblms .prblm{
+    margin-left: -130px;
+    margin-right: 5px;
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--darkest);
+      padding : 1rem;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+  }
+  #prblms .prblm .content{
+      flex : 1 1 0%;
+  }
+  #prblms .prblm .content .text{
+      color: var(--light);
+      font-size: 1.125rem;
+      width:100%;
+      display: block;
+      transition: 0.4s;
+  }
+  #prblms .prblm .content .text:not(:read-only)
+  {
+      color: var(--pink);
+  }
+  #prblms  .prblm .actions{
+      display: flex;
+      margin: 0 -0.5rem;
+  }
+  .prblm .actions button{
+      cursor: pointer;
+      margin: 0 0.5rem;
+      font-size: 1.1.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: 0.4s;
+  }
+  
+  .prblm .actions button:hover{
+      opacity : 0.8;
+  }
+  .prblm .actions button:active{
+      opacity: 0.6;
+  }
+  .prblm .actions .edit{
+     color: crimson;
+  }
+  .prblm .actions .delete{
+      color : crimson;
+  }
+  img{
+      height: 110px;
+      
+  }
+  #prblms-text{
+    background-color:#29275c;
+    color: white;
+    width: 100%;
+    height: 150px;
+    font-family:monospace;
+    resize: vertical;
+    font-weight:lighter;
+ }

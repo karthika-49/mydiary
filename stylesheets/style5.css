@@ -1,0 +1,156 @@
+:root{
+    --dark : rgb(97,111,161);
+    --darker:#29275c;
+    --darkest :rgb(30,28,64);
+    --gray : #6B7280;
+    --light : #EEE;
+   
+  }
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      font-family: cursive;
+  
+  }
+  body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: var(--dark);
+      color: #FFF;
+  
+  }
+  .container{
+    display: flex;
+  }
+  header{
+      padding: 2rem 1rem;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+  }
+  header h1{
+      font-size: 2.5rem;
+      font-weight: 100;
+      color : white;
+      margin-top: -2rem;
+      margin-bottom: 1rem;
+  }
+  #new-cpt-form{
+      display: flex;
+  
+  }
+  input , button{
+      appearance: none;
+      border: none;
+      outline: none;
+      background: none;
+  }
+  #new-cpt-input{
+      flex :1 1 0%;
+      background-color: var(--darker);
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-right: 1rem;
+      color : var(--light);
+      font-size: 1.25rem;
+  }
+  #new-cpt-input::placeholder{
+      color: rgb(91, 91, 91);
+  }
+  #new-cpt-submit{
+    margin-top: 60px;
+    height: 50px;
+    width: 50px;
+      color:crimson;
+      font-size: 35px;
+      font-weight: 1000;
+      background-color:#1e1c40;
+      border-radius: 10rem;
+      cursor: pointer;
+      transition: 0.4s;
+  }
+  #new-cpt-submit:hover{
+  color: white;
+  }
+  #new-cpt-submit:active{
+      opacity: 0.6;
+  }
+  main{
+      flex:1 1 0%;
+      max-width: 800px;
+      width:200%;
+      margin: 0 auto;
+  }
+  .cpt-list{
+      padding: 1rem;
+  }
+  .cpt-list h2{
+  font-size: 1.5rem;
+  font-weight: 100;
+  color:white;
+  margin-bottom: 1rem;
+  }
+  #cpts .cpt{
+    margin-left: -130px;
+    margin-right: 5px;
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--darkest);
+      padding : 1rem;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+  }
+  #cpts .cpt .content{
+      flex : 1 1 0%;
+  }
+  #cpts .cpt .content .text{
+      color: var(--light);
+      font-size: 1.125rem;
+      width:100%;
+      display: block;
+      transition: 0.4s;
+  }
+  #cpts .cpt .content .text:not(:read-only)
+  {
+      color: var(--pink);
+  }
+  #cpts  .cpt .actions{
+      display: flex;
+      margin: 0 -0.5rem;
+  }
+  .cpt .actions button{
+      cursor: pointer;
+      margin: 0 0.5rem;
+      font-size: 1.1.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: 0.4s;
+  }
+  
+  .cpt .actions button:hover{
+      opacity : 0.8;
+  }
+  .cpt .actions button:active{
+      opacity: 0.6;
+  }
+  .cpt .actions .edit{
+     color: crimson;
+  }
+  .cpt .actions .delete{
+      color : crimson;
+  }
+  img{
+    padding-top: 20px;
+      height: 120px;
+      
+  }
+  #cpts-text{
+    background-color:#29275c;
+    color: white;
+    width: 100%;
+    height: 150px;
+    font-family:monospace;
+    resize: vertical;
+    font-weight:lighter;
+ }

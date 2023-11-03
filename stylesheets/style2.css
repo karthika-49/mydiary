@@ -1,0 +1,138 @@
+:root{
+  --dark : rgb(97,111,161);
+  --darker:#29275c;
+  --darkest :rgb(30,28,64);
+  --gray : #6B7280;
+  --light : #EEE;
+ 
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: cursive;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color: #FFF;
+
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 100;
+    color : white;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+#new-goal-form{
+    display: flex;
+
+}
+input , button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#new-goal-input{
+    flex :1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color : var(--light);
+    font-size: 1.25rem;
+}
+#new-goal-input::placeholder{
+    color: rgb(91, 91, 91);
+}
+#new-goal-submit{
+    color:crimson;
+    font-size: 15px;
+    font-weight: 500;
+    background-color:rgb(30,28,64);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#new-goal-submit:hover{
+color: white;
+}
+#new-goal-submit:active{
+    opacity: 0.6;
+}
+main{
+    flex:1 1 0%;
+    max-width: 800px;
+    width:100%;
+    margin: 0 auto;
+}
+.goal-list{
+    padding: 1rem;
+}
+.goal-list h2{
+font-size: 1.5rem;
+font-weight: 100;
+color:white;
+margin-bottom: 1rem;
+}
+#goals .goal{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding : 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+#goals .goal .content{
+    flex : 1 1 0%;
+}
+#goals .goal .content .text{
+    color: var(--light);
+    font-size: 1.125rem;
+    width:100%;
+    display: block;
+    transition: 0.4s;
+}
+#goals .goal .content .text:not(:read-only)
+{
+    color: var(--pink);
+}
+#goals  .goal .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.goal .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.goal .actions button:hover{
+    opacity : 0.8;
+}
+.goal .actions button:active{
+    opacity: 0.6;
+}
+.goal .actions .edit{
+   color: crimson;
+}
+.goal .actions .delete{
+    color : crimson;
+}
+img{
+    height: 120px;
+    
+}
